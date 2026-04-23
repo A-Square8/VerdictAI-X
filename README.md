@@ -2,6 +2,11 @@
 
 VerdictAI X is a high-end decision support system designed to provide guidance for individuals and small groups in making complex real-world decisions. Unlike standard conversational interfaces, it highlights the benefits of long-context language models and multi-agent systems through a structured reasoning process. Instead of a single answer, it provides a panel of AI agents who examine a situation from multiple perspectives to identify hidden aspects and provide balanced advice.
 
+# Snaps
+<img width="1916" height="904" alt="image" src="https://github.com/user-attachments/assets/d860bd9a-015b-449b-bba5-88263246b1d5" />
+<img width="1916" height="904" alt="image" src="https://github.com/user-attachments/assets/d236e15d-d138-4756-8800-8eb2b5f99a57" />
+
+
 ## How It Works
 
 The platform follows a multi-stage pipeline to ensure a 360-degree view of any dilemma:
