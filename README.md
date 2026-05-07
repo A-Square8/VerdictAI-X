@@ -1,71 +1,81 @@
+<div align="center">
+
 # VerdictAI X
+### Multi-Agent Decision Intelligence
 
-VerdictAI X is a high-end decision support system designed to provide guidance for individuals and small groups in making complex real-world decisions. Unlike standard conversational interfaces, it highlights the benefits of long-context language models and multi-agent systems through a structured reasoning process. Instead of a single answer, it provides a panel of AI agents who examine a situation from multiple perspectives to identify hidden aspects and provide balanced advice.
+Five specialized AI agents debate your dilemma from opposing perspectives,
+then synthesize a structured recommendation with quantified risk and confidence metrics.
 
-# Snaps
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-1.5_Flash_&_Pro-4285F4?logo=google)
+![Gradio](https://img.shields.io/badge/Interface-Gradio-orange)
+![HuggingFace](https://img.shields.io/badge/Deployed-HuggingFace_Spaces-yellow?logo=huggingface)
+
+
+
+</div>
+
+## The Problem
+
+Most AI tools give you one answer from one perspective. Real decisions are messier than that —
+they involve tradeoffs between risk, growth, values, and timing that a single viewpoint misses.
+VerdictAI X runs your decision through five adversarial agents who challenge each other,
+then distills the debate into a final verdict.
+
+## Snaps
+
 <img width="1916" height="904" alt="image" src="https://github.com/user-attachments/assets/d860bd9a-015b-449b-bba5-88263246b1d5" />
 <img width="1916" height="904" alt="image" src="https://github.com/user-attachments/assets/d236e15d-d138-4756-8800-8eb2b5f99a57" />
 
-
 ## How It Works
 
-The platform follows a multi-stage pipeline to ensure a 360-degree view of any dilemma:
+**1. Input Ingestion**
+The system parses your decision, stated constraints, and implicit goals to establish a baseline analytical state.
 
-1. Input Ingestion: The system parses your decision, constraints, and implicit goals to establish a baseline analytical state.
-2. Independent Analysis: Five specialized AI agents analyze the situation concurrently from their unique professional and personal perspectives.
-3. Adversarial Debate: The agents engage in two rounds of live debate. In the first round, they challenge vulnerabilities in each other's logic. In the second, they defend their positions or refine their stances based on the pushback.
-4. Final Synthesis: A dedicated Verdict Engine extracts consensus, resolves conflicts, and generates a final recommendation with quantified risk, growth, and confidence metrics.
+**2. Independent Analysis**
+Five agents analyze the situation concurrently, each from a distinct professional and psychological lens.
 
-## The Council of Agents
+**3. Adversarial Debate**
+Two rounds of live debate. Round one: agents attack vulnerabilities in each other's reasoning.
+Round two: agents defend or revise their position based on the pushback received.
 
-The system utilizes five distinct personas to cover all dimensions of a decision:
+**4. Final Synthesis**
+A dedicated Verdict Engine resolves conflicts, extracts consensus, and produces a final recommendation
+with quantified risk, growth potential, and confidence scores.
 
-- The Strategist: Optimizes for long-term ROI, mathematical leverage, and compounding returns.
-- The Guardian: Acts as the risk-mitigation layer, calculating financial runways and stress-testing positive assumptions.
-- The Visionary: Scans for non-linear upside and exponential growth opportunities that might be overlooked.
-- The Humanist: Evaluates psychological bandwidth, relationship impact, and alignment with personal core values.
-- The Contrarian: Interrogates the initial framing of the decision to identify hidden shortcuts, biases, or systemic flaws.
+## The Council
+
+| Agent | Role |
+|---|---|
+| The Strategist | Optimizes for long-term ROI, mathematical leverage, and compounding returns |
+| The Guardian | Risk-mitigation layer — calculates financial runways and stress-tests assumptions |
+| The Visionary | Scans for non-linear upside and exponential opportunities that others overlook |
+| The Humanist | Evaluates psychological cost, relationship impact, and alignment with personal values |
+| The Contrarian | Interrogates the framing itself — surfaces hidden biases, shortcuts, and systemic flaws |
 
 ## Technology Stack
 
-- Language Models: Google Gemini 1.5 Flash (for high-speed analysis and debate) and Gemini 1.5 Pro (for final high-context synthesis).
-- Interface: Gradio with a custom-engineered CSS layer for a premium, responsive dark-themed dashboard.
-- Backend: Python with asynchronous streaming integration for real-time feedback during the analysis phase.
-- Security: Environment-based secret management to ensure API keys are never exposed in the source code.
-- Deployment: Optimized for production on Hugging Face Spaces.
+| Layer | Technology |
+|---|---|
+| Analysis LLM | Gemini 1.5 Flash — high-speed concurrent agent reasoning |
+| Synthesis LLM | Gemini 1.5 Pro — high-context final verdict generation |
+| Interface | Gradio with custom dark-themed CSS layer |
+| Backend | Python with async streaming for real-time output |
+| Deployment | Hugging Face Spaces |
+| Security | Environment-based secret management, no keys in source |
 
-## Getting Started
-
-### 1. Installation
-
-Clone the repository and install the required dependencies:
+## Setup
 
 ```bash
 git clone https://github.com/A-Square8/VerdictAI-X
 cd VerdictAI-X
 pip install -r requirements.txt
-```
 
-### 2. Configuration
-
-Set up your Gemini API key by creating a .env file from the example:
-
-```bash
 cp .env.example .env
-# Open .env and paste your Gemini API key in the appropriate field
-```
+# Add your Gemini API key to .env
+# Get a free key at Google AI Studio
 
-You can obtain a free API key from the Google AI Studio website.
-
-### 3. Execution
-
-Launch the application locally:
-
-```bash
 python app.py
 ```
 
-Once the server is running, open the provided local URL in your web browser.
-
----
-Built as a technical demonstration of advanced multi-agent orchestration and adversarial reasoning.
+Built as a technical demonstration of multi-agent orchestration and adversarial reasoning pipelines.
